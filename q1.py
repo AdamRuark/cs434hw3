@@ -40,12 +40,12 @@ def main(lr):
     # Load in batch data
     train_data = datasets.CIFAR10('.', 
                                 train=True, 
-                                download=False,  
+                                download=True,  
                                 transform=transforms.ToTensor())
 
     testing_data = datasets.CIFAR10('.',
                                 train=False,
-                                download=False,
+                                download=True,
                                 transform=transforms.ToTensor())
 
     train_loader = torch.utils.data.DataLoader(dataset=train_data,
