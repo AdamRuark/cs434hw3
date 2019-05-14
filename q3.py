@@ -111,8 +111,6 @@ def main(d, m, wd):
     plt.savefig(f'q3_acc_static_d{d}_m{m}_wd{wd}.png')
     plt.clf()
 
-    return
-
     # Testing out different d
     test_loss = []
     test_acc = []
