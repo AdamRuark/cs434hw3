@@ -99,7 +99,7 @@ def main(lr):
     plt.plot(epoch_label, train_loss, marker='o', color='red')
     plt.plot(epoch_label, valid_loss, marker='o', color='blue')
     plt.legend(['Training Loss', 'Validation Loss'])
-    plt.savefig(f'q1_loss_{lr}.png')
+    plt.savefig(f'q4_loss_{lr}.png')
     plt.clf()
 
     plt.title('Training and Validation Accuracy vs Epoch')
@@ -108,7 +108,7 @@ def main(lr):
     plt.plot(epoch_label, train_acc, marker='o', color='red')
     plt.plot(epoch_label, valid_acc, marker='o', color='blue')
     plt.legend(['Training Accuracy', 'Validation Accuracy'])
-    plt.savefig(f'q1_acc_{lr}.png')
+    plt.savefig(f'q4_acc_{lr}.png')
     plt.clf()
 
 def train(epoch, train_batch, log_interval=50):
