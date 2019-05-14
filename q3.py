@@ -108,8 +108,10 @@ def main(d, m, wd):
     plt.plot(epoch_label, train_acc, marker='o', color='red')
     plt.plot(epoch_label, valid_acc, marker='o', color='blue')
     plt.legend(['Training Accuracy', 'Validation Accuracy'])
-    plt.savefig(f'q3_acc_static.png')
+    plt.savefig(f'q3_acc_static_d{d}_m{m}_wd{wd}.png')
     plt.clf()
+
+    return
 
     # Testing out different d
     test_loss = []
